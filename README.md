@@ -9,10 +9,10 @@ markdown
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ## 🌐 لینک‌های مفید
-- **🌍 صفحه دمو:**[ [https://niloufarmtd.github.io](https://YOUR_USERNAME.github.io](https://niloufarmtd.github.io/Smart-student-time-manager/))
+- **🌍 صفحه دمو:**  https://niloufarmtd.github.io/Smart-student-time-manager/
 - **🚀 برنامه واقعی:** [اجرا با Streamlit](#اجرا)
-- **📁 کد منبع:**[ [GitHub Repository](https://github.com/YOUR_USERNAME/smart-student-time-manager)
-](https://github.com/niloufarmtd/Smart-student-time-manager/)
+- **📁 کد منبع:** [GitHub Repository](https://github.com/niloufarmtd/smart-student-time-manager)
+
 ## ✨ ویژگی‌ها
 - 🧠 **یادگیری تطبیقی** - سیستم از رفتار شما یاد می‌گیرد
 - 🎯 **اولویت‌بندی هوشمند** - ترکیب فوریت، اهمیت و زمان
@@ -23,7 +23,7 @@ markdown
 ## 🚀 اجرا
 
 ### روش ۱: مشاهده دمو (بدون نیاز به نصب)
-برو به: [[https://YOUR_USERNAME.github.io](https://YOUR_USERNAME.github.io](https://niloufarmtd.github.io/Smart-student-time-manager/))
+برو به : https://niloufarmtd.github.io/Smart-student-time-manager/
 
 ### روش ۲: اجرای نسخه کامل روی کامپیوتر
 ```bash
