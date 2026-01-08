@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎓 مدیر زمان هوشمند دانشجویان - دمو</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                مدیر زمان هوشمند
+            </a>
+            <div class="nav-links">
+                <a href="#features"><i class="fas fa-star"></i> ویژگی‌ها</a>
+                <a href="#demo"><i class="fas fa-play"></i> دمو</a>
+                <a href="#installation"><i class="fas fa-download"></i> نصب</a>
+                <a href="https://github.com/YOUR_USERNAME/smart-student-time-manager" target="_blank">
+                    <i class="fab fa-github"></i> کد اصلی
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">🎓 مدیر زمان هوشمند دانشجویان</span><br>
+                    <small>سیستم هوشمند مدیریت زمان با هوش مصنوعی</small>
+                </h1>
+                <p class="hero-subtitle">
+                    یک سیستم مدیریت زمان پیشرفته که با استفاده از هوش مصنوعی، کارهای شما را اولویت‌بندی می‌کند، 
+                    برنامه روزانه تولید می‌کند و از رفتار شما یاد می‌گیرد!
+                </p>
+                <div class="hero-buttons">
+                    <a href="#demo-app" class="btn btn-primary">
+                        <i class="fas fa-play-circle"></i> مشاهده دمو تعاملی
+                    </a>
+                    <a href="#real-app" class="btn btn-secondary">
+                        <i class="fas fa-rocket"></i> اجرای نسخه واقعی
+                    </a>
+                    <a href="https://github.com/YOUR_USERNAME/smart-student-time-manager/archive/refs/heads/main.zip" class="btn btn-outline">
+                        <i class="fas fa-download"></i> دانلود کد
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section">
+        <div class="container">
+            <h2 class="section-title">✨ ویژگی‌های سیستم</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>یادگیری تطبیقی</h3>
+                    <p>سیستم از رفتار مطالعه شما یاد می‌گیرد و اولویت‌ها را تنظیم می‌کند</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sort-amount-down"></i>
+                    </div>
+                    <h3>اولویت‌بندی هوشمند</h3>
+                    <p>کارها را بر اساس فوریت، اهمیت و زمان تخمینی رتبه‌بندی می‌کند</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>برنامه‌ریزی روزانه</h3>
+                    <p>برنامه شخصی‌سازی شده برای هر روز تولید می‌کند</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>تحلیل پیشرفت</h3>
+                    <p>نمودارها و آمارهای پیشرفت تحصیلی شما</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo App (Static Simulation) -->
+    <section id="demo-app" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">🎮 دمو تعاملی سیستم</h2>
+            <p class="section-subtitle">این یک شبیه‌سازی از رابط کاربری اصلی است. نسخه واقعی شامل هوش مصنوعی و پردازش کامل است.</p>
+            
+            <div class="demo-container">
+                <!-- Tabs -->
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="openTab(event, 'dashboard')">
+                        <i class="fas fa-home"></i> داشبورد
+                    </button>
+                    <button class="tab-btn" onclick="openTab(event, 'add-task')">
+                        <i class="fas fa-plus"></i> افزودن کار
+                    </button>
+                    <button class="tab-btn" onclick="openTab(event, 'schedule')">
+                        <i class="fas fa-calendar"></i> برنامه‌ریزی
+                    </button>
+                </div>
+                
+                <!-- Dashboard Tab -->
+                <div id="dashboard" class="tab-content active">
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="metric-value" id="total-tasks">۵</div>
+                            <div class="metric-label">کل کارها</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <div class="metric-value" id="high-priority">۳</div>
+                            <div class="metric-label">اولویت بالا</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="metric-value" id="completed">۲</div>
+                            <div class="metric-label">تکمیل شده</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="metric-value" id="active-courses">۴</div>
+                            <div class="metric-label">درس‌های فعال</div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="demo-subtitle">🔥 کارهای با اولویت بالا</h3>
+                    <div class="task-list">
+                        <div class="task-card task-high">
+                            <div class="task-header">
+                                <h4>پروژه پایانی هوش مصنوعی</h4>
+                                <span class="task-priority">اولویت: ۸.۵</span>
+                            </div>
+                            <div class="task-details">
+                                <span><i class="fas fa-book"></i> درس: هوش مصنوعی</span>
+                                <span><i class="fas fa-clock"></i> زمان: ۴ ساعت</span>
+                                <span><i class="fas fa-calendar"></i> مهلت: ۲ روز</span>
+                            </div>
+                            <button class="complete-btn" onclick="completeTask(this)">✅ تکمیل شد</button>
+                        </div>
+                        
+                        <div class="task-card task-high">
+                            <div class="task-header">
+                                <h4>تمرین ریاضی مهندسی</h4>
+                                <span class="task-priority">اولویت: ۷.۲</span>
+                            </div>
+                            <div class="task-details">
+                                <span><i class="fas fa-book"></i> درس: ریاضی مهندسی</span>
+                                <span><i class="fas fa-clock"></i> زمان: ۲ ساعت</span>
+                                <span><i class="fas fa-calendar"></i> مهلت: فردا</span>
+                            </div>
+                            <button class="complete-btn" onclick="completeTask(this)">✅ تکمیل شد</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add Task Tab -->
+                <div id="add-task" class="tab-content">
+                    <h3 class="demo-subtitle">➕ افزودن کار جدید</h3>
+                    <form id="task-form" class="demo-form">
+                        <div class="form-group">
+                            <label for="task-title"><i class="fas fa-heading"></i> عنوان کار *</label>
+                            <input type="text" id="task-title" placeholder="مثال: پروژه پایانی" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="task-course"><i class="fas fa-book"></i> درس *</label>
+                                <input type="text" id="task-course" placeholder="مثال: هوش مصنوعی" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="task-deadline"><i class="fas fa-calendar"></i> مهلت</label>
+                                <input type="date" id="task-deadline" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="task-time"><i class="fas fa-clock"></i> زمان تخمینی (ساعت)</label>
+                            <div class="slider-container">
+                                <input type="range" id="task-time" min="1" max="10" value="2" class="slider">
+                                <span id="time-value">۲ ساعت</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label><i class="fas fa-tags"></i> برچسب‌ها</label>
+                            <div class="tags">
+                                <label class="tag-checkbox">
+                                    <input type="checkbox" value="فوری">
+                                    <span>فوری</span>
+                                </label>
+                                <label class="tag-checkbox">
+                                    <input type="checkbox" value="مهم">
+                                    <span>مهم</span>
+                                </label>
+                                <label class="tag-checkbox">
+                                    <input type="checkbox" value="پروژه">
+                                    <span>پروژه</span>
+                                </label>
+                                <label class="tag-checkbox">
+                                    <input type="checkbox" value="امتحان">
+                                    <span>امتحان</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button type="button" class="btn btn-primary" onclick="addTask()">
+                            <i class="fas fa-plus"></i> اضافه کردن کار
+                        </button>
+                        
+                        <div id="preview-section" class="preview-card">
+                            <h4><i class="fas fa-eye"></i> پیش‌نمایش اولویت:</h4>
+                            <p id="preview-details">اطلاعات کار را وارد کنید</p>
+                            <div id="priority-display">اولویت: --</div>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Schedule Tab -->
+                <div id="schedule" class="tab-content">
+                    <h3 class="demo-subtitle">📅 برنامه روزانه پیشنهادی</h3>
+                    
+                    <div class="schedule-list">
+                        <div class="time-slot">
+                            <div class="time-header">
+                                <i class="fas fa-clock"></i>
+                                <strong>۸:۰۰ - ۱۰:۰۰ صبح</strong>
+                            </div>
+                            <div class="time-content">
+                                <h4>پروژه پایانی هوش مصنوعی</h4>
+                                <p><i class="fas fa-book"></i> درس: هوش مصنوعی</p>
+                                <p><i class="fas fa-clock"></i> مدت: ۲ ساعت</p>
+                            </div>
+                        </div>
+                        
+                        <div class="time-slot">
+                            <div class="time-header">
+                                <i class="fas fa-clock"></i>
+                                <strong>۱۰:۰۰ - ۱۲:۰۰ ظهر</strong>
+                            </div>
+                            <div class="time-content">
+                                <h4>تمرین ریاضی مهندسی</h4>
+                                <p><i class="fas fa-book"></i> درس: ریاضی مهندسی</p>
+                                <p><i class="fas fa-clock"></i> مدت: ۲ ساعت</p>
+                            </div>
+                        </div>
+                        
+                        <div class="time-slot">
+                            <div class="time-header">
+                                <i class="fas fa-clock"></i>
+                                <strong>۱۳:۰۰ - ۱۵:۰۰ بعدازظهر</strong>
+                            </div>
+                            <div class="time-content">
+                                <h4>مطالعه برای آزمون فیزیک</h4>
+                                <p><i class="fas fa-book"></i> درس: فیزیک</p>
+                                <p><i class="fas fa-clock"></i> مدت: ۲ ساعت</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-secondary" onclick="generateSchedule()">
+                        <i class="fas fa-sync-alt"></i> تولید برنامه جدید
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real App Section -->
+    <section id="real-app" class="section">
+        <div class="container">
+            <h2 class="section-title">🚀 نسخه واقعی برنامه</h2>
+            <p class="section-subtitle">برای اجرای نسخه کامل با هوش مصنوعی واقعی:</p>
+            
+            <div class="code-block">
+                <h3><i class="fas fa-terminal"></i> دستورات اجرا:</h3>
+                <pre><code># 1. دریافت کد پروژه
+git clone https://github.com/YOUR_USERNAME/smart-student-time-manager.git
+
+# 2. رفتن به پوشه پروژه
+cd smart-student-time-manager
+
+# 3. نصب نیازمندی‌ها
+pip install streamlit pandas plotly
+
+# 4. اجرای برنامه
+streamlit run app.py</code></pre>
+                
+                <p class="info-note">
+                    <i class="fas fa-info-circle"></i>
+                    سپس مرورگر خود را باز کنید و به آدرس زیر بروید:
+                    <strong>http://localhost:8501</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>مدیر زمان هوشمند دانشجویان</h3>
+                    <p>MVP نسخه ۲.۰ | توسعه‌یافته توسط فاطمه طاهری و نیلوفر معتمدی</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="https://github.com/YOUR_USERNAME/smart-student-time-manager">
+                        <i class="fab fa-github"></i> مخزن GitHub
+                    </a>
+                    <a href="https://github.com/YOUR_USERNAME/smart-student-time-manager/blob/main/app.py">
+                        <i class="fas fa-code"></i> مشاهده کد اصلی
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-file-pdf"></i> مستندات پروژه
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© ۲۰۲۴ - سیستم هوشمند مدیریت زمان با قابلیت یادگیری تطبیقی</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
