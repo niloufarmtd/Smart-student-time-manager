@@ -37,4 +37,4 @@ pip install streamlit pandas plotly
 # ۳. اجرای برنامه
 streamlit run app.py
 سپس مرورگر را باز کنید و به آدرس زیر بروید:
-👉 http://localhost:8501
+👉 http://localhost:8504
